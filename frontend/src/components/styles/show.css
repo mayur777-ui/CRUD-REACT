@@ -1,0 +1,116 @@
+body {
+    background-color: #f7f9fc; /* Soft off-white background for comfort */
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+    line-height: 1.6; /* Improved readability */
+}
+
+.container {
+    max-width: 1200px; /* Keep a maximum width for larger screens */
+    margin: auto; /* Center the container */
+    padding: 20px; /* Inner spacing */
+}
+
+h2 {
+    color: #333; /* Dark color for headings */
+    font-weight: 700; /* Bold for emphasis */
+    text-align: center; /* Centered title */
+    margin-bottom: 40px; /* Space below the heading */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Soft text shadow for depth */
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    border-radius: 15px; /* Rounded corners */
+    background-color: #ffffff; /* White background for contrast */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Elevated shadow */
+    overflow: hidden; /* Prevent overflow */
+    position: relative; /* Position context for overlay */
+    margin-bottom: 30px; /* Space between cards */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.card-body {
+    padding: 20px; /* Padding for content */
+}
+
+.card-title {
+    font-size: 1.6rem; /* Larger title font */
+    font-weight: bold; /* Bold title */
+    color: #007bff; /* Vibrant blue for titles */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.card-text {
+    font-size: 1rem; /* Standard text size */
+    color: #555; /* Darker text color for better contrast */
+}
+
+.btn {
+    border-radius: 30px; /* Fully rounded buttons */
+    padding: 12px 30px; /* Generous padding */
+    font-size: 1.1rem; /* Consistent button text size */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.btn-primary {
+    background-color: #28a745; /* Fresh green for primary */
+    border: none;
+    color: white; /* White text */
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slight grow effect */
+    box-shadow: 0 6px 15px rgba(40, 167, 69, 0.3); /* Enhanced shadow */
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Bright yellow for warning */
+    border: none;
+    color: black; /* Black text */
+}
+
+.btn-warning:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 193, 7, 0.3); /* Enhanced shadow */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Bold red for danger */
+    border: none;
+    color: white; /* White text */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(220, 53, 69, 0.3); /* Enhanced shadow */
+}
+
+.text-center {
+    margin-top: 20px; /* Space above centered elements */
+}
+
+footer {
+    text-align: center; /* Center footer text */
+    margin-top: 30px; /* Space above footer */
+    color: #6c757d; /* Muted footer color */
+    font-size: 0.9rem; /* Smaller font for footer */
+}
+
+@media (max-width: 768px) {
+    .btn {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 10px; /* Space between buttons */
+    }
+
+    .card {
+        margin-bottom: 20px; /* Space between cards */
+    }
+}
