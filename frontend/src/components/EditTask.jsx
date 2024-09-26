@@ -5,7 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 
 export default function EditTask() {
-    const  USER_API_END_POINT = 'http://localhost:8000/Task';
+    const  USER_API_END_POINT = 'https://crud-react-fqzp.onrender.com/Task';
     const navigate = useNavigate();
     const {id} = useParams();
     const [input,setinput] = useState({
