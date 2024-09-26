@@ -6,7 +6,7 @@ const router = express.Router({mergeParams:true});
 router.route('/addtask').post(addTask);
 router.route('/edittask/:id').put(editTask);
 router.route('/deleteTask/:id').delete(deleteTask);
-router.route('/showTask').get(showTask);
+router.route('/').get(showTask);
 router.route('/showOne/:id').get(showone);
 // router.get('/',(req,res)=>{
 //     res.send('Task');
