@@ -11,7 +11,7 @@ export default function Show() {
     useEffect(() => {
         const fetchTasks = async () => {
             try {
-                const response = await axios.get(`${USER_API_END_POINT}/showTask`);
+                const response = await axios.get(`${USER_API_END_POINT}`);
                 setTask(response.data);
             } catch (err) {
                 console.error(err.message);
