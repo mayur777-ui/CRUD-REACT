@@ -12,12 +12,12 @@ app.use(cors());
 app.use(express.json())
 app.use('/Task', taskRouter);
 
-
+const port =  process.env.PORT || 4000;
 
 app.get('*',(req,res)=>{
     res.send("hello");
 })
-app.listen(8000,(req,res)=>{
+app.listen(port,(req,res)=>{
     console.log('server is running on port 8000');
     main();
 }) 
