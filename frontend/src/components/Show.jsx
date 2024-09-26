@@ -5,7 +5,7 @@ import './styles/show.css';
 
 export default function Show() {
     const [tasks, setTask] = useState([]);
-    const USER_API_END_POINT = 'http://localhost:8000/Task';
+    const USER_API_END_POINT = 'https://crud-react-fqzp.onrender.com/Task';
     const navigate = useNavigate();
 
     useEffect(() => {
